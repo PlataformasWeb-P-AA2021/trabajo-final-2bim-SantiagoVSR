@@ -135,9 +135,13 @@ public static void main(String[] args) {
                    
                     System.out.println("Ingrese el Costo por cada Gigas");
                     double costo2 = sc.nextDouble();
+                    
+                    System.out.println("Ingrese el descuento del producto");
+                    double des=sc.nextDouble();
+                    
                     PlanPostPagoMinutosMegasEconomico p4 = new PlanPostPagoMinutosMegasEconomico(pr,
                             mar, ciu, mod, num, min2, costoMin2,
-                            megas2, costo2, 0.10);
+                            megas2, costo2, des);
                     lista.add(p4);
                     break;
 
